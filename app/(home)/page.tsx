@@ -69,8 +69,6 @@ const HomePage = async () => {
     );
 
   }
-  // console.log(categories);
-
 
   return (
     <>

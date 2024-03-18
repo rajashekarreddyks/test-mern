@@ -21,32 +21,6 @@ const CategoriesList = ({
     page
 }: CategoriesListProps) => {
     
-
-    //     {
-    //         id: "recents",
-    //         label: "Recents",
-    //     },
-    //     {
-    //         id: "home",
-    //         label: "Home",
-    //     },
-    //     {
-    //         id: "applications",
-    //         label: "Applications",
-    //     },
-    //     {
-    //         id: "desktop",
-    //         label: "Desktop",
-    //     },
-    //     {
-    //         id: "downloads",
-    //         label: "Downloads",
-    //     },
-    //     {
-    //         id: "documents",
-    //         label: "Documents",
-    //     },
-    // ] as const
     const [loading, setLoading] = useState(false);
     const FormSchema = z.object({
         categories: z.array(z.number()).refine((value) => value.some((item) => item), {

@@ -37,7 +37,7 @@ export async function POST (req: NextRequest, res: NextResponse) {
       host: 'smtp-relay.brevo.com',
       port: 587,
       auth: {
-        // TODO: replace `user` and `pass` values from <https://forwardemail.net>
+        
         user: 'shekarks@gmail.com',
         pass: process.env.SMTP_PASS
       }
